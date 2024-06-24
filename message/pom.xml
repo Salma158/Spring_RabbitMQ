@@ -73,7 +73,7 @@
 				<version>3.4.3</version>
 				<configuration>
 					<to>
-						<image>myimage</image>
+						<image>messageImage</image>
 					</to>
 				</configuration>
 			</plugin>

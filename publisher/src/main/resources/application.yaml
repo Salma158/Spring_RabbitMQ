@@ -1,11 +1,16 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
     name: "publisher"
   cloud:
+    function:
+      definition: updateAccount
     stream:
       bindings:
+        updateAccount-in-0:
+          destination: communication-sent
+          group: ${spring.application.name}
         sendCommunication-out-0:
           destination: send-communication
   rabbitmq:

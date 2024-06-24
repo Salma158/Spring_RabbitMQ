@@ -12,18 +12,11 @@ public class MessageFunctions {
     public static final Logger log = LoggerFactory.getLogger(MessageFunctions.class);
 
     @Bean
-    public Function<MessageDto, MessageDto> email(){
+    public Function<MessageDto, Long> email(){
         return MessageDto -> {
-            log.info("sending email with details : {}", MessageDto.toString());
-            return MessageDto;
-        };
-    }
-
-    @Bean
-    public Function<MessageDto, Long> sms(){
-        return MessageDto -> {
-            log.info("sending sms with details : {}", MessageDto.toString());
+            log.info("sending email verification for user with details : {}", MessageDto.toString());
             return MessageDto.id();
         };
     }
+
 }
