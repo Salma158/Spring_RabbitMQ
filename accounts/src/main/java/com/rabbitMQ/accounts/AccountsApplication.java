@@ -1,13 +1,13 @@
-package com.rabbitMQ.publisher;
+package com.rabbitMQ.accounts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PublisherApplication {
+public class AccountsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PublisherApplication.class, args);
+		SpringApplication.run(AccountsApplication.class, args);
 	}
 
 }

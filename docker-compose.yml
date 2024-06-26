@@ -1,0 +1,37 @@
+services:
+  rabbit:
+    image: rabbitmq:3.13-management
+    hostname: rabbit
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - rabbitmq_network
+
+  accounts:
+    image: "RabbitMQ/accounts:v1"
+    container_name: accounts-service
+    depends_on:
+      - rabbit
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbit"
+    networks:
+      - rabbitmq_network
+    ports:
+      - "8081:8081"
+
+  message:
+    image: "RabbitMQ/message:v1"
+    container_name: messaging-service
+    depends_on:
+      - rabbit
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbit"
+    networks:
+      - rabbitmq_network
+    ports:
+      - "8090:8090"
+
+networks:
+  rabbitmq_network:
+    driver: bridge

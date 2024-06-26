@@ -1,10 +1,10 @@
-package com.rabbitMQ.publisher;
+package com.rabbitMQ.accounts;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PublisherApplicationTests {
+class AccountsApplicationTests {
 
 	@Test
 	void contextLoads() {

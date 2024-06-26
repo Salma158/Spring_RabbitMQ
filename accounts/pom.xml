@@ -9,9 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rabbitMQ</groupId>
-	<artifactId>publisher</artifactId>
+	<artifactId>accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>publisher</name>
+	<packaging>jar</packaging>
+	<name>accounts</name>
 	<description>microservices to support messaging</description>
 	<url/>
 	<licenses>
@@ -82,16 +83,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>jib-maven-plugin</artifactId>
-				<version>3.4.3</version>
-				<configuration>
-					<to>
-						<image>messageImage</image>
-					</to>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

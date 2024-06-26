@@ -1,8 +1,7 @@
-package com.rabbitMQ.publisher.controller;
-import com.rabbitMQ.publisher.dto.UserDto;
-import com.rabbitMQ.publisher.dto.MessageDto;
+package com.rabbitMQ.accounts.controller;
+import com.rabbitMQ.accounts.dto.UserDto;
+import com.rabbitMQ.accounts.dto.MessageDto;
 import lombok.AllArgsConstructor;
-import org.apache.logging.log4j.message.Message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.stream.function.StreamBridge;

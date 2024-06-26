@@ -1,4 +1,4 @@
-package com.rabbitMQ.publisher.functions;
+package com.rabbitMQ.accounts.functions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
