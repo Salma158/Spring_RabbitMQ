@@ -9,7 +9,7 @@ services:
       - rabbitmq_network
 
   accounts:
-    image: "RabbitMQ/accounts:v1"
+    image: "salmasherif856807/accounts:v1"
     container_name: accounts-service
     depends_on:
       - rabbit
@@ -21,7 +21,7 @@ services:
       - "8081:8081"
 
   message:
-    image: "RabbitMQ/message:v1"
+    image: "salmasherif856807/message:v1"
     container_name: messaging-service
     depends_on:
       - rabbit
