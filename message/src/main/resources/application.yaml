@@ -9,7 +9,7 @@ spring:
         email-in-0:
           destination: send-communication
           group: ${spring.application.name}
-        email-out-0:
+        verify-out-0:
           destination: communication-sent
     rabbitmq:
       host: localhost
