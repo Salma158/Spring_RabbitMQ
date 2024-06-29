@@ -16,4 +16,5 @@ public class UsersFunctions {
             log.info("activating user account with id : {}", id.toString());
         };
     }
+
 }
