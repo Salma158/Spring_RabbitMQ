@@ -9,7 +9,7 @@ services:
       - rabbitmq_network
 
   accounts:
-    image: "salmasherif856807/accounts:v1"
+    image: "salmasherif856807/accounts-ms:v1"
     container_name: accounts-service
     depends_on:
       - rabbit
