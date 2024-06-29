@@ -18,7 +18,7 @@ services:
     networks:
       - rabbitmq_network
     ports:
-      - "8081:8081"
+      - "8084:8084"
 
   message:
     image: "salmasherif856807/message:v1"
