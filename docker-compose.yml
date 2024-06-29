@@ -21,7 +21,7 @@ services:
       - "8084:8084"
 
   message:
-    image: "salmasherif856807/message:v1"
+    image: "salmasherif856807/message-ms:v1"
     container_name: messaging-service
     depends_on:
       - rabbit
