@@ -30,7 +30,7 @@ services:
     networks:
       - rabbitmq_network
     ports:
-      - "8090:8090"
+      - "8080:8080"
 
 networks:
   rabbitmq_network:
